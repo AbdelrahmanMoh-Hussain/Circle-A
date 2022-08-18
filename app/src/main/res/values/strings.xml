@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Circle A</string>
+    <string name="welcome">Welcome</string>
+    <string name="login">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="top_picks">Top Picks</string>
+    <string name="hot_offers">Hot Offers</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_up_btn">Sign Up</string>
+    <string name="todo">TODO</string>
+    <string-array name="Additions">
+        <item>Nothing</item>
+        <item>Onions</item>
+        <item>Cheese</item>
+        <item>Peppers</item>
+        <item>Ketchup</item>
+        <item>Mayonnaise</item>
+    </string-array>
+</resources>

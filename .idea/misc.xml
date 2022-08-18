@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Projects/Circle_A/app/src/main/res/drawable/top_pick_border.xml" value="0.226" />
+        <entry key="..\:/Android Projects/Circle_A/app/src/main/res/layout/activity_cart.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Projects/Circle_A/app/src/main/res/layout/activity_category.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Projects/Circle_A/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Android Projects/Circle_A/app/src/main/res/layout/activity_login.xml" value="0.262699564586357" />
+        <entry key="..\:/Android Projects/Circle_A/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Projects/Circle_A/app/src/main/res/layout/activity_product.xml" value="0.33" />
+        <entry key="..\:/Android Projects/Circle_A/app/src/main/res/layout/activity_sign_up.xml" value="0.36666666666666664" />
+        <entry key="..\:/Android Projects/Circle_A/app/src/main/res/layout/category_layout.xml" value="0.1" />
+        <entry key="..\:/Android Projects/Circle_A/app/src/main/res/layout/product_layout.xml" value="0.5" />
+        <entry key="..\:/Android_Studio_Projects/CircleA2/app/src/main/res/layout/activity_home.xml" value="0.2526041666666667" />
+        <entry key="..\:/Android_Studio_Projects/CircleA2/app/src/main/res/layout/activity_login.xml" value="0.2526041666666667" />
+        <entry key="..\:/Android_Studio_Projects/CircleA2/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
+        <entry key="..\:/Android_Studio_Projects/CircleA2/app/src/main/res/layout/activity_sign_up.xml" value="0.2526041666666667" />
+        <entry key="..\:/Circle_A/app/src/main/res/drawable/ad_border.xml" value="0.2025" />
+        <entry key="..\:/Circle_A/app/src/main/res/drawable/bar_cat.xml" value="0.2025" />
+        <entry key="..\:/Circle_A/app/src/main/res/drawable/ic_ca.xml" value="0.223" />
+        <entry key="..\:/Circle_A/app/src/main/res/layout/activity_home.xml" value="0.2526041666666667" />
+        <entry key="..\:/Circle_A/app/src/main/res/layout/activity_login.xml" value="0.2526041666666667" />
+        <entry key="..\:/Circle_A/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
+        <entry key="..\:/Circle_A/app/src/main/res/layout/activity_product.xml" value="0.2526041666666667" />
+        <entry key="..\:/Circle_A/app/src/main/res/layout/activity_sign_up.xml" value="0.2526041666666667" />
+        <entry key="..\:/new ca/Circle_A/app/src/main/res/drawable/ca.xml" value="0.223" />
+        <entry key="..\:/new ca/Circle_A/app/src/main/res/font/amarante.xml" value="0.14166666666666666" />
+        <entry key="..\:/new ca/Circle_A/app/src/main/res/layout/activity_cart.xml" value="0.2526041666666667" />
+        <entry key="..\:/new ca/Circle_A/app/src/main/res/layout/activity_category.xml" value="0.2526041666666667" />
+        <entry key="..\:/new ca/Circle_A/app/src/main/res/layout/activity_home.xml" value="0.2526041666666667" />
+        <entry key="..\:/new ca/Circle_A/app/src/main/res/layout/activity_login.xml" value="0.2526041666666667" />
+        <entry key="..\:/new ca/Circle_A/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
+        <entry key="..\:/new ca/Circle_A/app/src/main/res/layout/activity_product.xml" value="0.2526041666666667" />
+        <entry key="..\:/new ca/Circle_A/app/src/main/res/layout/activity_sign_up.xml" value="0.2526041666666667" />
+        <entry key="..\:/new ca/Circle_A/app/src/main/res/layout/activity_splash.xml" value="0.2526041666666667" />
+        <entry key="..\:/new ca/Circle_A/app/src/main/res/layout/product_layout.xml" value="0.2526041666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

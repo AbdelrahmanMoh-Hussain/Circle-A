@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/prodoct_lay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:layout_marginVertical="10dp"
+    android:layout_centerVertical="true">
+
+
+    <RelativeLayout
+        android:id="@+id/background_lay"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="@drawable/top_pick_border"
+
+        android:padding="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.529" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/background_lay"
+        android:layout_marginLeft="10dp"
+        android:text="TextView"
+        android:textColor="#323232"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:layout_marginLeft="10dp"
+        android:text="50"
+        android:textColor="@color/grayna"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/egy_pound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+android:layout_toRightOf="@id/product_price"
+android:layout_marginLeft="5dp"
+        android:text="L.E"
+
+        android:textColor="@color/grayna"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
