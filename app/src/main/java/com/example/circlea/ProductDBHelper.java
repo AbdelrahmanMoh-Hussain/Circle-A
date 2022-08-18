@@ -58,7 +58,7 @@ public class ProductDBHelper extends SQLiteOpenHelper {
     public void clear()
     {
         productDatabase = getWritableDatabase();
-        productDatabase.delete("product9", "email =" +User.getEmail2(),null);
+        productDatabase.delete("product9", "email='" +User.getEmail2()+"'",null);
         productDatabase.close();
     }
 }

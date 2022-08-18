@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 public class UserDB extends SQLiteOpenHelper {
     private final static String DBName="user.db";
@@ -49,4 +50,17 @@ public class UserDB extends SQLiteOpenHelper {
         else
             return false;
     }
+
+    public Cursor fetchAllUsers()
+    {
+        SQLiteDatabase db=this.getReadableDatabase();
+        String[] rowDetails = {"email", "password", "firstname", "lastname", "phonenumber", "address"};
+        Cursor cursor = db.query("users", rowDetails, null, null, null, null, null);
+        if (cursor != null) {
+            cursor.moveToFirst();
+        }
+        db.close();
+        return cursor;
+    }
+
 }

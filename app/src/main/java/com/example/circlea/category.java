@@ -4,12 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -96,13 +92,5 @@ public class category extends AppCompatActivity {
             prodRV.setLayoutManager(new GridLayoutManager(this,3));
 
         }
-        FloatingActionButton cartBtn = findViewById(R.id.cart_floating_btn);
-        cartBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(category.this, CartActivity.class);
-                startActivity(i);
-            }
-        });
     }
 }

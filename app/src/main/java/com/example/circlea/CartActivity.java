@@ -3,14 +3,12 @@ package com.example.circlea;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.database.Cursor;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -18,7 +16,7 @@ public class CartActivity extends AppCompatActivity {
 
     ListView lvProducts;
     ArrayAdapter<String> adapter;
-    ImageView go_back;
+    UserDB userDB=new UserDB(this);
     ProductDBHelper productDBHelper;
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -26,22 +24,22 @@ public class CartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cart);
 
-        go_back=findViewById(R.id.backArrow);
-        go_back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(CartActivity.this, ProductActivity.class);
-                startActivity(i);
-            }
-        });
         lvProducts = (ListView)findViewById(R.id.listView);
         adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1);
         lvProducts.setAdapter(adapter);
         TextView priceText = (TextView)findViewById(R.id.priceTxt);
         Button clearCartBtn = (Button)findViewById(R.id.clearCart);
-
+        TextView address= (TextView) findViewById(R.id.locationEditTxt);
         productDBHelper = new ProductDBHelper(getApplicationContext());
         Cursor cursor = productDBHelper.fetchAllProducts();
+        Cursor cursor2 = userDB.fetchAllUsers();
+       for(int i=0;i<cursor2.getCount();i++){
+           if(cursor2.getString(0).equals(User.getEmail2())){
+               address.setText(cursor2.getString(5));
+               break;
+           }
+           cursor2.moveToNext();
+       }
 
         int totalPrice = 0;
         while(!cursor.isAfterLast()){

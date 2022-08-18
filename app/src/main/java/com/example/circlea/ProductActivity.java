@@ -16,7 +16,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ProductActivity extends AppCompatActivity {
     String type = " ", addition, size = " ";
@@ -27,7 +26,7 @@ public class ProductActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
-        getSupportActionBar().hide();
+
         Button addToCartBtn = findViewById(R.id.addCartBtn);
 
         TextView title = findViewById(R.id.title);
@@ -178,13 +177,5 @@ public class ProductActivity extends AppCompatActivity {
             }
         });
 
-        FloatingActionButton cartBtn = findViewById(R.id.cart_floating_btn);
-        cartBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(ProductActivity.this, CartActivity.class);
-                startActivity(i);
-            }
-        });
     }
 }
