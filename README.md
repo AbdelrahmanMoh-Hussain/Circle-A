@@ -1,4 +1,4 @@
-# Circle A description
+# Description
 - Circle A is a restaurant application that helps customers access online food ordering platforms, search for the suitable dish they want to order, and place their orders.
 
 # Languages used:
