@@ -1,6 +1,7 @@
 package com.example.circlea;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -11,6 +12,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -20,7 +22,6 @@ import java.util.ArrayList;
 public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         UserDB userDB=new UserDB(this);
@@ -66,5 +67,32 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
+        ImageView SettingsBtn;
+        SettingsBtn = findViewById(R.id.settings);
+        SettingsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this,SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView LogOutBtn;
+        LogOutBtn = findViewById(R.id.home);
+        LogOutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
+        ImageView ProfileBtn;
+        ProfileBtn = findViewById(R.id.profile);
+        ProfileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(HomeActivity.this,ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

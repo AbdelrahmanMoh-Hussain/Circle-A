@@ -5,8 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeActivity"
+    android:background="@color/backgroundcolor"
     android:textDirection="ltr"
+    android:theme="@style/Theme.CircleA"
     android:layoutDirection="ltr">
+
 
 
     <ScrollView
@@ -30,35 +33,7 @@
                 android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:ignore="MissingConstraints">
-
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:background="@drawable/circled_a__v2"
-                    android:padding="10dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/edit_text3"
-                    tools:ignore="UnknownId" />
-
-                <EditText
-                    android:layout_width="308dp"
-                    android:layout_height="49dp"
-                    android:layout_margin="6dp"
-                    android:background="@drawable/bar_cat"
-                    android:drawableRight="@drawable/search"
-                    android:drawablePadding="9dp"
-                    android:fontFamily="@font/amita"
-                    android:hint="Search your food"
-                    android:padding="10dp"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white"
-                    android:textSize="13sp"
-                    android:autofillHints="" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                tools:ignore="MissingConstraints"/>
 
 
             <TextView

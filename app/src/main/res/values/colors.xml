@@ -15,4 +15,6 @@
     <color name="blue_dark">#2B4865</color>
     <color name="orange">#fb774f</color>
     <color name="grayna">#9B9292</color>
+    <color name="backgroundcolor">#FFFFFFFF</color>
+    <color name="textcolor">#FF000000</color>
 </resources>

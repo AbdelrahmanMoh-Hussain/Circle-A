@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".category">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cart_floating_btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ff5e00"
+        android:contentDescription="@string/appbar_scrolling_view_behavior"
+        android:elevation="3dp"
+        android:src="@drawable/shopping_cart"
+        app:backgroundTint="#ff5e00"
+        app:layout_anchor="@+id/app_bar"
+        app:layout_anchorGravity="center">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <RelativeLayout
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@color/orange">
+
+        <TextView
+            android:id="@+id/categoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="test"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/categorydesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/categoryTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="15dp"
+            android:text="testef"
+
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/intro"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/products_RV"
+        />
+
+
+</RelativeLayout>

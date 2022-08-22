@@ -177,5 +177,35 @@ public class ProductActivity extends AppCompatActivity {
             }
         });
 
+        ImageView SettingsBtn;
+        SettingsBtn = findViewById(R.id.settings);
+        SettingsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProductActivity.this,SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView HomeBtn;
+        HomeBtn = findViewById(R.id.home);
+        HomeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProductActivity.this,HomeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ImageView ProfileBtn;
+        ProfileBtn = findViewById(R.id.profile);
+        ProfileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ProductActivity.this,ProfileActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }

@@ -12,6 +12,8 @@ public class User {
     private static String email2;
 
 
+
+
     public static ArrayList<User> users = new ArrayList<User>();
 
     public User(String firstName, String lastName, String email, String password,String phoneNumber,String address) {
@@ -21,6 +23,7 @@ public class User {
         this.password = password;
         this.phoneNumber=phoneNumber;
         this.address=address;
+
     }
 
     public User() {
@@ -37,6 +40,7 @@ public class User {
     public static void setEmail(String email) {
         email2 = email;
     }
+
 
     public String getPassword() {
         return password;
